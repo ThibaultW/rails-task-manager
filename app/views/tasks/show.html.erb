@@ -1,2 +1,5 @@
-<h1>Tasks#show</h1>
-<p>Find me in app/views/tasks/show.html.erb</p>
+<h1><%=@task.name%></h1>
+<h3>Priority: <%=@task.priority %></h3>
+<p><%=@task.description%></p>
+<h5>created at: <%=@task.created_at%><br>last update: <%=@task.updated_at%></h5>
+<%= link_to "Go back to global list", tasks_path%>
